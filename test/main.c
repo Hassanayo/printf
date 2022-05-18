@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * @main - test out printf function
+ * main - test out printf function
  * 
- * @return: always 0
+ * Return: always 0
  */
 
 int main(void)
