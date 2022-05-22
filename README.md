@@ -15,3 +15,20 @@ The _printf function prints out the user input to the terminal. It is an adaptat
 - ``` va_end (man 3 va_end) ```
 - ``` va_copy (man 3 va_copy) ```
 - ``` va_arg (man 3 va_arg) ```
+
+## Examples
+#### String
+- Input - ```_printf("My name is %s\n", 'John Doe');```
+- Output - ```My name is John Doe```
+
+#### Character
+- Input - ```_printf("Your grade is %c\n", 'A');```
+- Output - ````Your grade is A```
+
+#### Decimal
+- Input - ```_printf("The cost of this item is %d dollars\n", 2500);```
+- Output - ```The cost of this item is 2500 dollars```
+
+#### Integer
+- Input - ```_printf("This is item  number %i\n", 15);```
+- Output - ```This is item number 15```
