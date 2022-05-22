@@ -37,7 +37,7 @@ The _printf function prints out the user input to the terminal. It is an adaptat
 * **_printf.c:** - contains the function ```_printf``` that uses the prototype ```int _printf(const char *format, ...);```. See ```man 3 printf``` for more detail. **_printf** will return the number of characters printed and writes out the output to **stdout** .
 * **_putchar.c:** - contains the function ```_putchar``` that writes a character to stdout.
 * **main.h:** - contains all function prototypes used for ```_printf```.
-* **man_3_printf:** - manual page for the custom made ```_printf``` function.
+* **man_3_printf:** - the manual page for the custom made ```_printf``` function.
 * **print_chars.c:** - contains function ```print_c``` , ```print_s```, ```print_S```, ```print_r```, ```hex_print```
 * **print_numbers.c:** - contains the functions ```print_i``` and ```print_d```
 * **print_hex.c:** - contains the functions ```print_hex```, which prints an unsigned int in hexidecimal form, ```print_x```, ```print_X```, and ```print_p```.
