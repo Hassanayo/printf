@@ -29,7 +29,7 @@ int print_s(va_list s)
     char *str = va_arg(s, char *);
 
     if(str == NULL)
-    str = "(null)";
+        str = "(null)";
     for (count = 0; str[count]; count++)
     {
        _putchar(str[count]);
