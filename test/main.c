@@ -11,11 +11,8 @@ int main(void)
 {
     int n = 0;
 
-    n = _printf("%%\n");
-    printf("n: %d\n", n);
+    _printf("hello %c %%\n", 'u');
+    printf("hello %c %%\n", 'u');
 
-    
-    n = printf("%%\n");
-    printf("n: %d\n", n);
     return (0);
 }

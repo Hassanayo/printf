@@ -32,13 +32,20 @@ static int (*check_for_specifiers(const char *format))(va_list)
 /**
  * _printf - prints out anything
  * @format: argument tpes that are passed to the function
+ * 
  * Return: number of characters printed
  */
 int _printf(const char *format, ...)
 {
+<<<<<<< HEAD
     unsigned int i = 0, count = 0;
     va_list valist;
     int (*f)(va_list);
+=======
+    va_list args;
+    int n_displayed = 0;
+    int i = 0;
+>>>>>>> ddd28b31ff944ec6b25b02210369d51c6a9333b2
 
     if (format == NULL)
     {
@@ -54,6 +61,7 @@ int _printf(const char *format, ...)
         }
         if (!format[i])
         {
+<<<<<<< HEAD
             return (count);
         }
         f = check_for_specifiers(&format[i + 1]);
@@ -75,6 +83,27 @@ int _printf(const char *format, ...)
         }
         else{
             i++;
+=======
+            
+            if (format[i+1] == 'c')
+            {
+                _print_char(args);
+                n_displayed++;
+                i++;
+            }
+            else if (format[i+1] == 's')
+            {
+                i++;
+                _print_str(args);
+                n_displayed++;
+            }
+            else if (format[i+1] == '%')
+            {
+                i++;
+                _putchar('%');
+                n_displayed++;
+            }
+>>>>>>> ddd28b31ff944ec6b25b02210369d51c6a9333b2
         }
     }
     va_end(valist);
