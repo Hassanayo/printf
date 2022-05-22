@@ -44,5 +44,5 @@ The _printf function prints out the user input to the terminal. It is an adaptat
 * **print_rot13.c** - contains the function ```print_R```.
 
 ## Authors
-Ayomide Hassan | @hassanayo
-Oluwatomiwa Ekwunife | @elisheba-beep
+- Ayomide Hassan | @hassanayo
+- Oluwatomiwa Ekwunife | @elisheba-beep
