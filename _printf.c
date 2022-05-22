@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-unsigned char handle_flags(const char *flag, char *index);
+
 /**
  * check_for_specifiers - checks for valid format specifier
  * @format: possible format specifier
@@ -87,10 +87,8 @@ unsigned char handle_flags(const char *flag, char *index)
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0, count = 0;
-    char tmp;
-    unsigned char flags;
 	va_list valist;
-	int (*f)(va_list, unsigned char);
+	int (*f)(va_list);
 
 	if (format == NULL)
 		return (-1);
@@ -104,12 +102,10 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i])
 			return (count);
-        tmp = 0;
-        flags = handle_flags(format + i + 1, &tmp);
 		f = check_for_specifiers(&format[i + 1]);
 		if (f != NULL)
 		{
-			count += f(valist, flags);
+			count += f(valist);
 			i += 2;
 			continue;
 		}
